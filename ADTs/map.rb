@@ -4,7 +4,12 @@
     end
 
     def set(key, val)
+        map.each.with_index do |arr, idx|
+            map[idx][1] = val if arr[0] == key
+            return map[idx] if arr[0] == key
+        end
         map << [key, val]
+        [key,val]
     end
 
     def get(key)
