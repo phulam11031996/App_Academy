@@ -33,10 +33,10 @@
 
     def include_hash(el)
         idx = el.hash % @cache_size
-        @cache[idx].include?(el)
+        @hash_set[idx].include?(el)
     end
 
-    # private
+    private
     # helper methods go here!
 
     attr_accessor :cache_size
