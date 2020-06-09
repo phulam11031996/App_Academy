@@ -37,7 +37,6 @@
     end
 
     private
-    # helper methods go here!
 
     attr_accessor :cache_size
     attr_accessor :cache_size 
